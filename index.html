@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--FONT FAMILY-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!--Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+
+  Learn more-->
+  <div class="container">
+    <div class="mobile-icon">
+      <img class="icon-open" src="images/icon-menu.svg" alt="">
+      <img class="icon-open" src="images/icon-close-menu.svg" alt="">
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-links">
+        <li class="nav-link">
+          <a href="#" class="mobile-feat">
+            <span class="">Features</span>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </a>
+          <div class="mobile-todos">
+            <div class="todo">
+              <a href="#"><img src="images/icon-todo.svg" alt="">
+                <span>Todo List</span></a>
+            </div>
+            <div class="todo">
+              <a href="#"><img src="images/icon-calendar.svg" alt="">
+                <span>calendar</span></a>
+            </div>
+            <div class="todo">
+              <a href="#">
+                <img src="images/icon-reminders.svg" alt="">
+                <span>Reminders</span></a>
+            </div>
+            <div class="todo">
+              <a href="#">
+                <img src="images/icon-planning.svg" alt="">
+                <span>planning</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="mobile-feat">
+            <span>Company</span>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </a>
+          <div class="company-mobile-todos">
+            <a href="#">History</a>
+            <a href="#">Our team</a>
+            <a href="#">Blog</a>
+          </div>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <span>Careers</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <span>About</span>
+          </a>
+        </li>
+        <a href="#" class="login-btn">Login</a>
+        <a href="#" class="login-register">Register</a>
+      </ul>
+    </nav>
+
+    <nav>
+      <div class="nav-container">
+        <div class="nav-head">
+          <img src="images/logo.svg" alt="">
+          <!--Nav links-->
+          <ul class="nav-links">
+            <li class="nav-link feat">
+              <a href="#">
+                <span>Features</span>
+                <img src="images/icon-arrow-down.svg" alt="">
+              </a>
+              <div class="todos">
+                <div class="todo">
+                  <a href="#"><img src="images/icon-todo.svg" alt="">
+                    <span>Todo List</span></a>
+                </div>
+                <div class="todo">
+                  <a href="#"><img src="images/icon-calendar.svg" alt="">
+                    <span>calendar</span></a>
+                </div>
+                <div class="todo">
+                  <a href="#">
+                    <img src="images/icon-reminders.svg" alt="">
+                    <span>Reminders</span></a>
+                </div>
+                <div class="todo">
+                  <a href="#">
+                    <img src="images/icon-planning.svg" alt="">
+                    <span>planning</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-link comp">
+              <div class="company-todos">
+                <a href="#">History</a>
+                <a href="#">Our team</a>
+                <a href="#">Blog</a>
+              </div>
+              <a href="#">
+                <span>Company</span>
+                <img src="images/icon-arrow-down.svg" alt="">
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <span>Careers</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-log">
+          <a href="#" class="login-btn">Login</a>
+          <a href="#" class="login-register">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text">
+            <h2 class="hero-head">Make remote work</h2>
+            <p>Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.
+            </p>
+            <a href="#">Learn more</a>
+            <div class="hero-icon">
+              <img src="images/client-databiz.svg" alt="">
+              <img src="images/client-audiophile.svg" alt="">
+              <img src="images/client-maker.svg" alt="">
+              <img src="images/client-meet.svg" alt="">
+            </div>
+          </div>
+          <div class="hero-img visible">
+            <img src="images/image-hero-desktop.png" alt="desktop-img">
+          </div>
+          <div class="hero-img not-visible">
+            <img src="images/image-hero-mobile.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.-->
+  </div>
+</body>
+
+</html>
